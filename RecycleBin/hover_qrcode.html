@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 200px;
+            height: 200px;
+        }
+ 
+        .weixin {
+            position: relative;
+        }
+ 
+        .weixin img.qrcode {
+            position: absolute;
+            z-index: 99;
+            top: -200px;
+            right: -40px;
+            width: 7.5rem;
+            max-width: none;
+            height: 7.5rem;
+            transform: scale(0);
+            transform-origin: top right;
+            opacity: 0;
+            border: .3125rem solid #0085ba;
+            border-radius: .25rem;
+            -webkit-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+ 
+        }
+ 
+        .weixin:hover img.qrcode {
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <a class="weixin" href="http://www.baidu.com">
+        <img src="wx.png" alt="Î¢ÐÅ¶þÎ¬Âë">
+        <img class="qrcode" src="wx.png" alt="">
+    </a>
+</div>
+ 
+</body>
+</html>

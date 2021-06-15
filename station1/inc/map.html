@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/map.css">
+    <script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    </head>
+<body>
+    <div class = "top">
+        <div class = "header">
+
+            <div class="logo">
+                <img src = "../images/logo_black2.png">
+            </div>
+
+            <div class = "search" >
+                <div class="searchBox">
+                    <input class="put" type="text" placeholder="请输入搜索内容"/>
+                    <div id = "search">搜索</div>
+                </div>
+
+                <div  class="loginBox" align="left">
+                    <a href = "login.html" target="_blank">登陆</a>｜<a href = "register_1.html" target="_blank">注册</a>
+                </div>
+            </div>
+
+            
+            <div class="topnav">
+                <!--不含子菜单-->
+                <ul class="navMenu">
+                    <li class="index">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="secnav">走进霞山
+                        <ul>
+                            <li>
+                                <a href="">关于霞山</a>
+                            </li>
+                            <li>
+                                <a href="">主要景点</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li  class="secnav">资讯动态
+                        <ul>
+                            <li>
+                                <a href="">景区新闻</a>
+                            </li>
+                            <li>
+                                <a href="">节庆活动</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="secnav">旅游指南
+                        <ul>
+                            <li>
+                                <a href="">如何到达</a>
+                            </li>
+                            <li>
+                                <a href="">近期天气</a>
+                            </li>
+                            <li>
+                                <a href="">景区地图</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="secnav">服务中心
+                        <ul>
+                            <li>
+                                <a href="">预约订票</a>
+                            </li>
+                            <li>
+                                <a href="">在线提问</a>
+                            </li>
+                            <li>
+                                <a href="">留言建议</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="secnav">游玩分享
+                        <ul>
+                            <li>
+                                <a href="">霞山美摄</a>
+                            </li>
+                            <li>
+                                <a href="">精彩游记</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="incbgi">
+        <div class="incbggrey"></div>
+        <img src="../images/incbgc.jpeg" alt="">
+        <div class="text">
+            <p class="fontsize34">如何到达</p>
+            <p>How to get there</p>
+        </div>
+        
+    </div>
+
+    
+    <div class="content">  <!-- css在footer中 -->
+        <span><img src="../images/home.png" alt=""></span>
+        <span>&nbsp;&nbsp;首页&nbsp;>&nbsp;旅游指南&nbsp;>&nbsp;</span>
+        <span class="current1">如何到达</span>
+    </div>
+    
+    <div class="main_title">
+        <span>如何到达</span>
+    </div>
+    
+    <div id="container">
+    </div> 
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值"></script>
+<script>
+var map = new AMap.Map('container', {
+    resizeEnable: true, //是否监控地图容器尺寸变化
+    zoom:11, //初始化地图层级
+    center: [116.397428, 39.90923] //初始化地图中心点
+});
+</script>
+    <div class="viewBoxbgc">
+    <div class="viewBox">
+        <!--左内容-->
+        
+        
+
+        
+    </div>
+    </div>
+
+    <div class="footerbgc">
+        <div class="footer" style="border-top: 1px solid #888;padding-top: 22px;">
+            <div class="footerleft">
+                <ul>
+                    <li class="title1">走进霞山
+                        <ul>
+                            <li class="title2"><a href="">关于霞山</a></li>
+                            <li class="title2"><a href="">主要景点</a></li>
+                        </ul>
+                    </li>
+                    <li class="title1">资讯动态
+                        <ul>
+                            <li class="title2"><a href="">景区新闻</a></li>
+                            <li class="title2"><a href="">节庆活动</a></li>
+                        </ul>
+                    </li>
+                    <li class="title1">旅游指南
+                        <ul>
+                            <li class="title2"><a href="">如何到达</a></li>
+                            <li class="title2"><a href="">近期天气</a></li>
+                            <li class="title2"><a href="">景区地图</a></li>
+                        </ul>
+                    </li>
+                    <li class="title1">服务中心
+                        <ul>
+                            <li class="title2"><a href="">预约购票</a></li>
+                            <li class="title2"><a href="">在线提问</a></li>
+                            <li class="title2"><a href="">留言建议</a></li>
+                        </ul>
+                    </li>
+                    <li class="title1">游玩分享
+                        <ul>
+                            <li class="title2"><a href="">霞山美摄</a></li>
+                            <li class="title2"><a href="">精彩游记</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                 
+            </div>
+            <div class="footerright">
+                <img src="../images/footer/phone1.png" alt="">
+                <img src="../images/footer/wechat1.png" alt="">
+                <img src="../images/footer/weibo1.png" alt="">
+                <img src="../images/footer/wx_code.png" alt="" class="qrcode1">
+                <img src="../images/footer/wb_code.png" alt="" class="qrcode2">
+                <span>025-85766979</span>
+            </div>
+            <p style="border-top: 1px solid #ddd;padding-top: 28px;">
+                Copyright © 2021&nbsp;&nbsp;www.njsqxs.com&nbsp;&nbsp;|&nbsp;&nbsp;南京市栖霞山风景名胜区管理处&nbsp;&nbsp;|&nbsp;&nbsp;苏ICP备07501771号-1
+            </p>
+            <p style="padding-bottom: 30px;">邮编:210033&nbsp;&nbsp;|&nbsp;&nbsp;电话:+86-025-85766979&nbsp;&nbsp;|&nbsp;&nbsp;微信公众号：njsqxs</p>
+        </div>
+        
+    </div>
+</body>
+</html>
